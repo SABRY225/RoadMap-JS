@@ -1,0 +1,56 @@
+//Create Object
+let user={
+    //Properties
+    name :"Ahmed",
+    age:20,
+    //Methods 
+    Hello:function (){
+        return 'Hello '+ user.name;
+    },
+};
+console.log(user.name);// Ahmed
+console.log(user.age); // 20
+console.log(user.Hello());// Hello Ahmed
+
+//Dot Notation vs Bracket Notation
+let tast={
+    //Properties
+    name :"Ahmed",
+    "age":"20",
+
+};
+
+console.log(tast.age);// 20
+console.log(tast["age"]);// 20
+
+// Nested Object
+let parson={
+    //Properties
+    name :"Ahmed",
+    age:20,
+    address:{
+        one: "egypt",
+        two:"Qena",
+    }
+};
+console.log(parson.address.one);// egypt
+console.log(parson.address.two);// Qena
+
+//Create Object With New Keyword
+let obj = new Object();
+obj.name="Sabry";
+obj.age="30";
+obj.address="Qena";
+
+console.log(obj.name);// Sabry
+console.log(obj.age);// 30
+console.log(obj.address);// Qena
+
+
+//This keyword
+myVar="30";
+console.log(this.myVar);// 30
+console.log(Window.myVar);// 30
+
+
+
